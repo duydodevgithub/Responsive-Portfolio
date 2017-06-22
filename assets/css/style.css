@@ -1,0 +1,177 @@
+body {
+	background-image: url('../images/background.png');
+}
+
+h1 {
+	color: #4aaaa5;
+}
+a {
+	list-style-type: none;
+	text-decoration: none;
+}
+a:hover {
+	background-color: grey;
+}
+
+/*CSS for header*/
+#nav_bar {
+	background: white;
+	left: 0;
+	right: 0;
+	top: 0;
+	position: fixed;
+	border-bottom: 2px solid grey;
+}
+#nav_bar_main {
+	width: 960px;
+	margin: 0 auto;
+	height: 80px;
+	border-width: 1px;
+}
+#logo {
+	background: #4aaaa5;
+	width: 300px;
+	font-size: 60px;
+	height: 80px;
+	text-align: center;
+	font-family: 'Georgia';
+	position: fixed;
+	color: white;
+	line-height: 80px;
+}
+
+ul {
+	float: right;
+	list-style-type: none;
+	margin-top: 15px;
+	position: relative;
+}
+li {
+	float: left;
+	padding: 20px;
+}
+
+/*CSS for content*/
+#main {
+	margin: auto;
+	width: 100%;
+	height: 800px;
+}
+#content {
+	width: 960px;
+	margin: auto;
+}
+#about_me {
+	width: 650px;
+    background-color: #ffffff;
+    border: 2px solid #dddddd;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+    margin-top: 100px;
+}
+#image {
+	float: left;
+	margin-right: 10px;
+}
+#side_bar {
+	width: 270px;
+    background-color: white;
+    border: 2px solid #dddddd;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    float: right;
+	padding: 20px;
+    margin-top: 100px;
+}
+h2 {
+	color: #4aaaa5;
+}
+.icon {
+	width: 60px;
+}
+p {
+	line-height: 30px;
+}
+
+/*CSS for the footer*/
+footer {
+	background-color: #666666;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    border-top: 10px solid #4aaaa5;
+}
+
+/*CSS for contact page*/
+#form {
+	margin: 10px;
+	padding-bottom: 20px;
+}
+form {
+	line-height: 30px;
+}
+input {
+	width: 100%;
+}
+#message {
+	height: 100px;
+}
+#submit_button {
+	background: #4aaaa5;
+	color:white;
+	margin-left: 10px;
+	font-size: 25px;
+	padding-bottom: 8px;
+	padding: 4px;
+	text-align: center;
+}
+/*CSS for portfolio page*/
+
+.pics {
+	margin-left: 1.66%;
+	font-size: 23px;
+	font-weight: 800;
+	width: 30%;
+	padding-bottom: 20px;
+	margin: auto;
+}
+
+/*media query*/
+
+/*-----media query at 980px----*/
+@media screen and (max-width: 980px) {
+		#content{width: 80%;}
+		#side_bar {width: 40%;}
+		#about_me {width: 50%;}
+		#nav_bar_main {width: 80%;}
+		#logo {width: 30%;font-size: 50px;}
+		#image {width: 80%;margin:30px;height: 80%}
+		.pics {width: 100%;height: 100%;}
+}
+/*-----media query at 768px----*/
+@media screen and (max-width: 768px) {
+		#content{width: 90%;}
+		#about_me {width: 100%;}
+		#side_bar {width: 100%;margin-top: 10px;}
+		#image {width: 40%;height: 40%;display: inline-block;}
+}
+/*-----media query at 640px----*/
+@media screen and (max-width: 640px) {
+		#content{width: 90%;}
+		#side_bar {width: 100%;}
+		.icon {float: left;padding: 10px;}
+		#about_me {width: 100%;}
+		#nav_bar_main {width: 90%;}
+		#logo {width: 30%;font-size: 30px;}
+		#image {width: 40%;margin:20px;height: 40%}
+		ul {
+			font-size: 15px;
+		}
+}
+		
